@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日常代码</title>
     <!-- CSS -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="lib/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/custom-global.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/custom-styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 
-<div class="container">
+<!-- BEGIN -->
+<div class="main">
+    
+    <div id="sidebar" class="animated bounceInLeft"><!-- 侧边栏 --></div>
+
+    <!-- 主要内容 -->
+    <div id="content">
+        <iframe id="frame" name="frame" scrolling="yes" frameborder="0"></iframe>
+    </div>
 
 </div>
+<!-- END -->
 
 <script src="lib/jquery-2.1.1.min.js"></script>
 <script src="lib/bootstrap-4.0.0/js/bootstrap.bundle.min.js"></script>
-<script src="js/custom-script.js"></script>
+<script src="lib/template-web.js"></script>
+<script src="js/global.js"></script>
+<script>
+    // 加载侧边栏
+    $("#sidebar").sidebar({},function () {
+        console.log("侧边栏加载成功");
+    });
+</script>
 </body>
 </html>

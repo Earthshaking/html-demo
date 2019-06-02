@@ -1,0 +1,41 @@
+{
+    "title": "START MENU",
+    "url": "index.html",
+    "data": [
+        {
+            "title": "Home",
+            "name": "主页",
+            "url": "pages/home.html",
+            "target": "frame",
+            "token": "Home"
+        },
+        {
+            "title": "element",
+            "name": "UI元素",
+            "url": "pages/element.html",
+            "target": "frame",
+            "token": "element"
+        },
+        {
+            "title": "content",
+            "name": "内容",
+            "url": "pages/table.html",
+            "target": "frame",
+            "token": "table"
+        },
+        {
+            "title": "layout",
+            "name": "布局",
+            "url": "pages/layout.html",
+            "target": "frame",
+            "token": "layout"
+        },
+        {
+            "title": "accordion",
+            "name": "手风琴",
+            "url": "pages/accordion.html",
+            "target": "frame",
+            "token": "accordion"
+        }
+    ]
+}

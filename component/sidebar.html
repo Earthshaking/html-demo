@@ -1,0 +1,15 @@
+<!-- 侧边栏 -->
+<div class="col-12" id="sidebar-inner">
+    <a href="{{list.url}}" class="menuTitle">{{list.title}}</a>
+    <div class="row">
+        <div class="list-group sidebar-nav list-group-flush">
+            {{each list.data value index}}
+                {{if index == 0}}
+                    <a href="{{value.url}}#{{value.token}}" data-index="{{index + 1}}" class="list-group-item list-group-item-action active" target="{{value.target}}" data-token="{{value.token}}">{{value.title}}</a>
+                {{else}}
+                    <a href="{{value.url}}#{{value.token}}" data-index="{{index + 1}}" class="list-group-item list-group-item-action" target="{{value.target}}" data-token="{{value.token}}">{{value.title}}</a>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
